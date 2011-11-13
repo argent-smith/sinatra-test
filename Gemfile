@@ -3,9 +3,11 @@ source "http://rubygems.org"
 
 gem "sinatra"
 gem "thin"
+gem "haml"
 
 group :development do
   gem "cucumber"
-  gem "webrat"
+  gem "capybara"
   gem "rspec"
+  gem "cucumber-sinatra"
 end
