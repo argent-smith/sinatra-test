@@ -19,6 +19,15 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
+    when /the page with UTF in Ruby/
+      '/utf_in_ruby'
+
+    when /the page with UTF in HAML/
+      '/utf_in_haml'
+
+    when /the page with UTF in both Ruby code and Haml template/
+      '/utf_in_ruby_and_haml'
+
     else
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
         "Now, go and add a mapping in #{__FILE__}"

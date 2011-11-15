@@ -17,8 +17,5 @@ Feature: UTF-8 in multiple places
 
   Scenario: UTF in both Ruby and HAML
     Given I go to the page with UTF in both Ruby code and Haml template
-    Then I should see
-    """
-    Русская строка в Ruby
-    Русская строка в HAML
-    """
+    Then I should see "Русская строка в Ruby"
+    And I should see "Русская строка в HAML"
