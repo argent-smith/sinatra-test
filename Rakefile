@@ -6,7 +6,7 @@ def command string
   system "bundle exec #{string}"
 end
 
-task :default => :features
+task :default => "bdd:features"
 
 desc "Start the app"
 task :serve do
@@ -14,7 +14,14 @@ task :serve do
   App.run!
 end
 
-desc "Run the Cucumber against the Features"
-task :features do
-  command "cucumber"
+namespace :bdd do
+  desc "Run the Cucumber against the Features"
+  task :features do
+    command "cucumber"
+  end
+
+  desc "Runs the features cyclically"
+  task :autotest do
+    command "env AUTOFEATURE=true autotest"
+  end
 end
