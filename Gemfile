@@ -10,4 +10,7 @@ group :development do
   gem "capybara"
   gem "rspec"
   gem "cucumber-sinatra"
+  gem "ZenTest"
+  gem "test-unit"
+  gem "redgreen"
 end
