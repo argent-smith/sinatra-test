@@ -28,6 +28,9 @@ module NavigationHelpers
     when /the page with UTF in both Ruby code and Haml template/
       '/utf_in_ruby_and_haml'
 
+    when /the page with all listed above and a markdown template/
+      '/utf_in_ruby_and_haml_and_markdown'
+
     else
       raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
         "Now, go and add a mapping in #{__FILE__}"

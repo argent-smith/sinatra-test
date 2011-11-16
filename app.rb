@@ -28,6 +28,10 @@ class App < Sinatra::Base
     haml :index_utf_ruby_haml
   end
 
+  get "/utf_in_ruby_and_haml_and_markdown" do
+    haml :index_utf_ruby_haml_markdown
+  end
+
   include Helpers
 end
 

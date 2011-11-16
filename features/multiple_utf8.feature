@@ -19,3 +19,10 @@ Feature: UTF-8 in multiple places
     Given I go to the page with UTF in both Ruby code and Haml template
     Then I should see "Русская строка в Ruby"
     And I should see "Русская строка в HAML"
+
+  Scenario: UTF in Ruby, HAML and Markdown
+    Given I go to the page with all listed above and a markdown template
+    Then I should see "Русская строка в Ruby"
+    And I should see "Русская строка в HAML"
+    And I should see "Русская строка в Markdown"
+

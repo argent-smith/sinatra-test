@@ -38,6 +38,7 @@ GEM
       rack
     rack-test (0.6.1)
       rack (>= 1.0)
+    redcarpet (1.17.2)
     redgreen (1.2.2)
     rspec (2.7.0)
       rspec-core (~> 2.7.0)
@@ -80,6 +81,7 @@ DEPENDENCIES
   cucumber
   cucumber-sinatra
   haml
+  redcarpet
   redgreen
   rspec
   sinatra
